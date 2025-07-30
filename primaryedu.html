@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Folks School</title>
+    <link rel="website icon" type="png" href="Assets/logo wothout bg.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    /* Adding fontface */
+    @font-face {
+        font-family: Mr_Dafoe;
+        src: url(Assets/Mr_Dafoe/MrDafoe-Regular.ttf);
+    }
+
+    span {
+        font-family: Mr_Dafoe;
+        color: #7c0a02;
+    }
+
+    /* styling navbar */
+    li {
+        list-style-type: none;
+        margin-right: 20px;
+    }
+
+
+    /* Styling whole text */
+    h2,
+    p,
+    li,
+    h5,
+    h4,
+    .card-text {
+        color: #7c0a02;
+    }
+
+    .card-body {
+        text-align: justify;
+    }
+
+    /* Styling learning experience section */
+    #learningexp-card {
+        background-color: rgb(231, 230, 230);
+        border: none;
+    }
+
+    @media (min-width: 768px) {
+        #learningexp-card {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* Styling footer */
+    footer {
+        background-color: #7c0a02;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    #footer-heading,
+    #footer-content {
+        color: white;
+    }
+
+    #sub-email {
+        border-color: #7c0a02;
+        color: #7c0a02;
+        background-color: white;
+    }
+
+    #sub-email:hover {
+        background-color: #7c0a02;
+        color: white;
+        border-color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+
+    #sub-button {
+        background-color: white;
+        color: #7c0a02;
+        border: none;
+    }
+
+    #sub-button:hover {
+        background-color: #7c0a02;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+</style>
+
+<body>
+    <!-- Making nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="color: #7c0a02;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Admission.html"
+                            style="color: #7c0a02;">Admission</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #7c0a02;">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Academic.html" style="color: #7c0a02;">Academics</a></li>
+                            <li><a class="dropdown-item" href="Earlyedu.html" style="color: #7c0a02;">Early Years</a>
+                            </li>
+                            <li><a class="dropdown-item" href="primaryedu.html" style="color: #7c0a02;">Primary</a></li>
+                            <li><a class="dropdown-item" href="secedu.html" style="color: #7c0a02;">Secondary</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html"
+                            style="color: #7c0a02;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="career.html"
+                            style="color: #7c0a02;">Career</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand"><img src="Assets/logo wothout bg.png" alt="logo"
+                        style="width: 120px; height: 90px; margin-right: 400px;" /></a>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                            width="24" /></a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- banner section -->
+    <div class="primaryimg1">
+        <img src="Assets/Primary img 1.png" class="img-fluid" alt="primaryimg1" id="primaryimg1">
+    </div>
+
+    <!-- Making Navigation -->
+    <div class="card ">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" style="color:#7c0a02;">Primary Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Overview" style="color:#7c0a02;">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#learningexp" style="color:#7c0a02;">Learning Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subjectoffered" style="color:#7c0a02;">Subject Offered</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title" id="Overview">Overview</h2>
+            <p class="card-text"><span>Little Folks School</span> believes that every child is
+                important. We strive to develop the true potential of each child.</p>
+            <p class="paragraph">Our school community works together to create a stimulating hands-on place for learning
+                that places the physical and emotional well-being of the child at the centre of a welcoming environment.
+            </p>
+            <h2 class="card-title">Our Aim</h2>
+            <p class="paragraph">Every child matters. We are confident students will:</p>
+            <ul>
+                <li style="list-style-type: disc;">Settle quickly into our warm and caring schools</li>
+                <li style="list-style-type: disc;">be inquistive learners in a place of joyful learning</li>
+                <li style="list-style-type: disc;">be in an enviroment that inspires creativity and imagination</li>
+                <li style="list-style-type: disc;">develop self-confidence and self-esteem</li>
+            </ul>
+            <hr>
+
+            <!-- making learning experience section -->
+            <h2 class="card-title" id="learningexp">A Wholesome Learning Experience</h2>
+            <!-- Making Assesment section -->
+            <div class="card mb-3" id="learningexp-card" style="max-width: 740px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/Assessment.jpg" class="img-fluid rounded-start" alt="Assesment"
+                            style="height: 200px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Assessment</h4>
+                            <p class="card-text">Assessment is genrally tracked informally and used in a formative
+                                manner. Various tools are used to guide improvement for each student, such as:</p>
+                            <ul>
+                                <li style="list-style-type: disc;">Baseline</li>
+                                <li style="list-style-type: disc;">Student Learning</li>
+                                <li style="list-style-type: disc;">Portfolios</li>
+                                <li style="list-style-type: disc;">Student Observation</li>
+                                <li style="list-style-type: disc;">Phonics Assessments</li>
+                                <li style="list-style-type: disc;">Reading Progress Checks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Making Parental Involvement section -->
+            <div class="card mb-3" id="learningexp-card" style="max-width: 740px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/Parental involvement.jpg" class="img-fluid rounded-start"
+                            alt="parental-involvement" style="height: 200px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Parental Involvement</h4>
+                            <p class="card-text">Parental engagement is the basis of a strong home-school partnership.
+                                To facilitate this, we believe in the following:</p>
+                            <ul>
+                                <li style="list-style-type: disc;">Exchanging knowledge about a child's needs,
+                                    activities, interests, and progress</li>
+                                <li style="list-style-type: disc;">Parent-Teacher Meeting (PTMs) and Individual
+                                    Parent-Teacher Meetingd (IPTMs) Provide
+                                    an opportunity to discuss active home-learning strategies and progress in school
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Making Blended Learning -->
+            <div class="card mb-3" id="learningexp-card" style="max-width: 740px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/blended learning.jpg" class="img-fluid rounded-start" alt="Blended Learning"
+                            style="height: 200px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Blended Learning </h4>
+                            <p class="card-text">Blended learning integrates technology and digital media with
+                                traditional classroom activities allowing students to customise their learning
+                                experiences.</p>
+                            <ul>
+                                <li style="list-style-type: disc;">All our schools are Microsoft Schools and have
+                                    Microsoft Teams features, such as
+                                    real-time video, collaborative space and more.</li>
+                                <li style="list-style-type: disc;">Our E-nursery/computer labs are integrated with
+                                    curriculum-aligned applications.
+                                </li>
+                                <li style="list-style-type: disc;">Interactive whiteboards provide hands-on learning.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Making Subject Offered section -->
+            <h2 class="card-title" id="subjectoffered">Subject Offered</h2>
+            <div class="card-text">We believe that students should experience their learning, discover new ideas,
+                explore their thinking and make connections with what they have learnt. Our seasoned faculty makes
+                learning fun for all our students.</div>
+            <br>
+            <h4 class="card-title">Key Disciplines</h4>
+            <ul>
+                <li style="list-style-type: disc;">English</li>
+                <li style="list-style-type: disc;">Arts</li>
+                <li style="list-style-type: disc;">Urdu</li>
+                <li style="list-style-type: disc;">Music</li>
+                <li style="list-style-type: disc;">Science</li>
+                <li style="list-style-type: disc;">Computing</li>
+                <li style="list-style-type: disc;">Social Science</li>
+                <li style="list-style-type: disc;">Physical education</li>
+                <li style="list-style-type: disc;">Islamiat</li>
+                <li style="list-style-type: disc;">General knowledge</li>
+                <li style="list-style-type: disc;">Mathematics</li>
+                <li style="list-style-type: disc;">Nazra</li>
+            </ul>
+
+            <div class="card-text">Our facilities include dedicated science and stem labs, sports grounds and talented
+                coaches. Our well-equipped libraries and a structured approach to reading enables our students to become
+                literature enthusiasts as they explore multiple pieces of fiction.</div>
+            <div class="card-text">Our student-led clubs and societies, such as drama, poetry, public speaking, dance,
+                and life skills, allow our learners to develop their skills and practice leadership, taking us one step
+                closer to our commitment of nurturing the champions of the future.</div>
+        </div>
+    </div>
+
+    <!-- Making Footer -->
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5 id="footer-heading">Contact Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="#contact-us" class="nav-link p-0" id="footer-links" style="color: white;">Help
+                            Center</a>
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="#about-us" class="nav-link p-0" id="footer-links" style="color: white;">Supprt</a>
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="Deliverypage.html" class="nav-link p-0" id="footer-links"
+                            style="color: white;">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5 id="footer-heading">Join Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Sign Up
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Log In
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Affiliate
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 offset-md-1 mb-3" id="newsletter">
+                <h5 id="footer-heading">Subscribe to our newsletter</h5>
+                <p id="footer-content">
+                    Monthly digest of what's new and exciting from us.
+                </p>
+                <form>
+                    <div class="d-flex w-100 gap-2">
+                        <input type="email" class="form-control" placeholder="Email address" id="sub-email" />
+                        <button class="btn" type="submit" id="sub-button">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p id="footer-content">
+                &copy; 2025 <span style="color: white;">Little Folks School</span>, Inc. All rights reserved.
+            </p>
+            <ul class="list-unstyled d-flex me-5">
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                            width="24" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

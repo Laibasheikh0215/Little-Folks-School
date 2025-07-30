@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Folks School</title>
+    <link rel="website icon" type="png" href="Assets/logo wothout bg.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    /* Adding fontface */
+    @font-face {
+        font-family: Mr_Dafoe;
+        src: url(Assets/Mr_Dafoe/MrDafoe-Regular.ttf);
+    }
+
+    span {
+        font-family: Mr_Dafoe;
+        color: #7c0a02;
+    }
+
+    /* Styling contact us box */
+    .container-box {
+        position: relative;
+        height: 350px;
+        background-color: white;
+    }
+
+    .band {
+        background-color: #7c0a02;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .overlay-box {
+        background-color: white;
+        max-width: 500px;
+        width: 90%;
+        padding: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .overlay-box h3 {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .overlay-box p {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: 576px) {
+        .overlay-box {
+            padding: 20px;
+        }
+
+        .overlay-box p {
+            font-size: 0.85rem;
+        }
+    }
+
+    li {
+        list-style-type: none;
+        margin-right: 20px;
+    }
+
+    /* Styling contact us image */
+    @media (min-width: 1200px) {
+        #contact-card {
+            margin-left: 200px;
+        }
+    }
+
+    #Contactus-img {
+        padding-top: 100px;
+        width: 500px;
+
+    }
+
+    .card-title {
+        color: #7c0a02;
+    }
+
+    .card-text {
+        padding: 0px 40px 0px 40px;
+        color: #7c0a02;
+    }
+
+    /* Styling map card */
+    .map-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+
+    /* Styling form section */
+    h2,
+    p,
+    label {
+        color: #7c0a02;
+    }
+
+    #nameInput,
+    #emailInput,
+    #messageTextarea {
+        border: 1px solid #7c0a02
+    }
+
+    #submit-button {
+        background-color: #7c0a02;
+        color: white;
+        border: none;
+        width: 100px;
+    }
+
+    #submit-button:hover {
+        background-color: white;
+        color: #7c0a02;
+        cursor: pointer;
+        width: 100px;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+
+    #contactusimg2 {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 14px;
+
+    }
+
+    /* styling footer */
+    footer {
+        background-color: #7c0a02;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    #footer-heading,
+    #footer-content {
+        color: white;
+    }
+
+    #sub-email {
+        border-color: #7c0a02;
+        color: #7c0a02;
+        background-color: white;
+    }
+
+    #sub-email:hover {
+        background-color: #7c0a02;
+        color: white;
+        border-color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+
+    #sub-button {
+        background-color: white;
+        color: #7c0a02;
+        border: none;
+    }
+
+    #sub-button:hover {
+        background-color: #7c0a02;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+</style>
+
+<body>
+    <!-- Making navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="color: #7c0a02;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Admission.html"
+                            style="color: #7c0a02;">Admission</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #7c0a02;">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Academic.html" style="color: #7c0a02;">Academics</a></li>
+                            <li><a class="dropdown-item" href="Earlyedu.html" style="color: #7c0a02;">Early Years</a>
+                            </li>
+                            <li><a class="dropdown-item" href="primaryedu.html" style="color: #7c0a02;">Primary</a></li>
+                            <li><a class="dropdown-item" href="secedu.html" style="color: #7c0a02;">Secondary</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html"
+                            style="color: #7c0a02;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="career.html"
+                            style="color: #7c0a02;">Career</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand"><img src="Assets/logo wothout bg.png" alt="logo"
+                        style="width: 120px; height: 90px; margin-right: 400px;" /></a>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                            width="24" /></a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Making banner -->
+    <div class="primaryimg1">
+        <img src="Assets/contact us img.png" class="img-fluid" alt="Secondaryimg1" id="Secondaryimg1"
+            style="width: 100%;">
+    </div>
+
+    <!-- Making contact us text -->
+    <div class="container-fluid container-box">
+        <div class="band"></div>
+        <div class="overlay-box rounded shadow">
+            <h3 style="color:#7c0a02;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c0a02" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 1 .737-.07l2.261 1.13a.678.678 0 0 1 .291.837l-.805 2.013a.678.678 0 0 1-.65.421c-.147 0-.29-.045-.413-.13l-.882-.588a11.72 11.72 0 0 0 5.248 5.248l.588-.882a.678.678 0 0 1 .55-.263.678.678 0 0 1 .286.064l2.013.805a.678.678 0 0 1 .421.65.678.678 0 0 1-.421.65l-2.261 1.13a.678.678 0 0 1-.737-.07l-1.016-.812a15.593 15.593 0 0 1-5.5-5.5L3.654 1.328z" />
+                </svg>Contact US</h3>
+            <p>We’d love to hear from you! Whether you’re a parent, student, or visitor, feel free to reach out with
+                your questions, feedback, or inquiries. Our team is always here to help and guide you.</p>
+        </div>
+    </div>
+
+    <!-- Making contact us card -->
+    <div class="card mb-3" id="contact-card" style="max-width: 940px;  box-shadow: 5px 5px 5px 5px rgb(167, 165, 165);">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Assets/Welcome contact img.png" class="img-fluid" alt="welcomecontactimg" id="Contactus-img">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c0a02"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 8.75L4.21 7 12 3.25 19.79 7 12 10.75zM5 10v10h4v-6h6v6h4V10l-7 3.18L5 10z" />
+                        </svg>
+                        School Address</h2>
+                    <p class="card-text"><span>Little Folks School</span>
+                </div>
+                <p class="card-text"><span>Little Folks School</span> Gulshan-e-Iqbal Campus</p>
+                <p class="card-text">Karachi, Sindh, 75300</p>
+                <p class="card-text">Pakistan</p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c0a02"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 1 .737-.07l2.261 1.13a.678.678 0 0 1 .291.837l-.805 2.013a.678.678 0 0 1-.65.421c-.147 0-.29-.045-.413-.13l-.882-.588a11.72 11.72 0 0 0 5.248 5.248l.588-.882a.678.678 0 0 1 .55-.263.678.678 0 0 1 .286.064l2.013.805a.678.678 0 0 1 .421.65.678.678 0 0 1-.421.65l-2.261 1.13a.678.678 0 0 1-.737-.07l-1.016-.812a15.593 15.593 0 0 1-5.5-5.5L3.654 1.328z" />
+                    </svg><b>Phone:</b> 02134614242
+                </p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c0a02"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.634l5.803-3.48L0 5.383zM6.761 9.674l-6.56 3.936A2 2 0 0 0 2 14h12a2 2 0 0 0 1.799-1.09l-6.56-3.936L8 10.117l-1.239-.743zm3.436-1.137L16 12.017V5.383l-5.803 3.154z" />
+                    </svg><b>Email:</b> info@littlefolks.edu.pk
+                </p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7c0a02"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1A1.5 1.5 0 0 1 16 2.5v11A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5v-11A1.5 1.5 0 0 1 1.5 1h1V.5a.5.5 0 0 1 1 0V1h.5V.5a.5.5 0 0 1 .5-.5zM15 4H1v9.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V4z" />
+                    </svg> <b>Office Timing:</b> Monday – Friday | 8:00 AM – 2:30 PM
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Making map card -->
+    <section class="map-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side Text -->
+
+                <div class="col-md-6">
+                    <iframe class="map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.2408764410156!2d67.1148520741434!3d24.923862842719863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3394a0721efb7%3A0xd37413ddc6145ca2!2sLittle%20Folks%20Paradise%20School%20Johar%20Campus!5e0!3m2!1sen!2s!4v1752419348071!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </iframe>
+                </div>
+                <!-- Right Side Map -->
+                <div class="col-md-6 mb-4 mb-md-0" style="padding-left: 20px; padding-top: 20px; ">
+                    <h2 class="mb-3" style="color:#7c0a02;">Visit Our Location</h2>
+                    <p style="color:#7c0a02;">
+                        We are located in the heart of the city with easy access to public transport.
+                        Come visit us and enjoy a comfortable and friendly environment.
+                    </p>
+                    <p style="color:#7c0a02;">
+                        Address: Ghulshan-e-johar, Pakistan
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Making design -->
+    <div class="container" style="padding-bottom: 20px;">
+        <div class="row justify-content-between align-items-center" style="padding-left: 10px; padding-right: 10px;">
+
+            <!-- Left Side - Contact Form -->
+            <div class="col-lg-6 col-md-8 col-12 text-center text-lg-start">
+                <div class="text-content overflow">
+                    <h2 class="main-heading1">Get in Touch</h2>
+                    <p class="main-content">
+                        Have a question or need more information? Fill out the form below or send us an email—we’ll get
+                        back to you as soon as possible.
+                    </p>
+
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageTextarea" class="form-label">Message</label>
+                        <textarea class="form-control" id="messageTextarea" rows="3"
+                            placeholder="Write your message here."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn" id="submit-button">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up"
+                id="design">
+                <div class="Square">
+                    <div class="images overflow">
+                        <img src="Assets/contact us img 2.png" alt="Contact us img 2" id="contactusimg2"
+                            class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Making shape -->
+    <div class="rectanglebox py-4" style="background-color: #7c0a02; width: 100%;">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h2 class="sub-heading1 mb-3" style="color: white;">We're Here for You</h2>
+                    <p class="paragraph" style="font-size: 16px; color: white;">
+                        Your child’s future is important to us. Whether it’s about admissions, academic programs,
+                        or a general inquiry, don’t hesitate to connect with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAking footer -->
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5 id="footer-heading">Contact Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="#contact-us" class="nav-link p-0" id="footer-links" style="color: white;">Help
+                            Center</a>
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="#about-us" class="nav-link p-0" id="footer-links" style="color: white;">Supprt</a>
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content">
+                        <a href="Deliverypage.html" class="nav-link p-0" id="footer-links"
+                            style="color: white;">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5 id="footer-heading">Join Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Sign Up
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Log In
+                    </li>
+                    <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                        Affiliate
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 offset-md-1 mb-3" id="newsletter">
+                <h5 id="footer-heading">Subscribe to our newsletter</h5>
+                <p id="footer-content">
+                    Monthly digest of what's new and exciting from us.
+                </p>
+                <form>
+                    <div class="d-flex w-100 gap-2">
+                        <input type="email" class="form-control" placeholder="Email address" id="sub-email" />
+                        <button class="btn" type="submit" id="sub-button">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p id="footer-content">
+                &copy; 2025 <span style="color: white;">Little Folks School</span>, Inc. All rights reserved.
+            </p>
+            <ul class="list-unstyled d-flex me-5">
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                            width="24" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

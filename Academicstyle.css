@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Adding fontface */
+@font-face{
+  font-family: Mr_Dafoe;
+  src: url(Assets/Mr_Dafoe/MrDafoe-Regular.ttf);
+}
+
+span{
+  font-family: Mr_Dafoe;
+  color:#7c0a02;
+}
+/* Styling Navbar */
+li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+/* Styling banner img 1 */
+#Academicimg1 {
+  width: 100%;
+}
+
+/* styling navigation card */
+h2,
+.card-text {
+  color: #7c0a02;
+}
+
+/* styling education card */
+#secedu,
+#priedu,
+#earlyedu {
+  border: none;
+  background-color: rgb(231, 230, 230);
+  color: #7c0a02;
+}
+
+a {
+  color: #7c0a02;
+  text-decoration: none;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+
+  #secedu,
+  #priedu,
+  #earlyedu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Making Footer */
+footer {
+  background-color: #7c0a02;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+#footer-heading,
+#footer-content {
+  color: white;
+}
+
+#sub-email {
+  border-color: #7c0a02;
+  color: #7c0a02;
+  background-color: white;
+}
+
+#sub-email:hover {
+  background-color: #7c0a02;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+  transition: background-color 0.4s step-end, color 0.4s ease;
+}
+
+#sub-button {
+  background-color: white;
+  color: #7c0a02;
+  border: none;
+}
+
+#sub-button:hover {
+  background-color: #7c0a02;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s step-end, color 0.4s ease;
+}

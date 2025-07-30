@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Folks School</title>
+    <link rel="website icon" type="png" href="Assets/logo wothout bg.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    /* Adding fontface */
+    @font-face {
+        font-family: Mr_Dafoe;
+        src: url(Assets/Mr_Dafoe/MrDafoe-Regular.ttf);
+    }
+
+    span {
+        font-family: Mr_Dafoe;
+        color: #7c0a02;
+    }
+
+    .card-body {
+        text-align: justify;
+    }
+
+    /* Styling whole text */
+    h2,
+    p,
+    h4,
+    h5,
+    li,
+    .card-text {
+        color: #7c0a02;
+    }
+
+    li {
+        list-style-type: none;
+        margin-right: 20px;
+    }
+
+    /* Styling "features-card */
+    #features-card {
+        background-color: rgb(231, 230, 230);
+        border: none;
+        height: 150px;
+    }
+
+    @media (min-width: 768px) {
+        #features-card {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* Styling Counselling section */
+
+    .caps-heading {
+        color: #7c0a02;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .caps-content {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .caps-content em {
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        font-size: 1.05rem;
+        color: #1d3b78;
+    }
+
+    .video-wrapper video {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    /* Styling footer */
+    footer {
+        background-color: #7c0a02;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    #footer-heading,
+    #footer-content {
+        color: white;
+        text-align: left;
+    }
+
+    #sub-email {
+        border-color: #7c0a02;
+        color: #7c0a02;
+        background-color: white;
+    }
+
+    #sub-email:hover {
+        background-color: #7c0a02;
+        color: white;
+        border-color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+
+    #sub-button {
+        background-color: white;
+        color: #7c0a02;
+        border: none;
+    }
+
+    #sub-button:hover {
+        background-color: #7c0a02;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.4s step-end, color 0.4s ease;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: white;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="color: #7c0a02;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Admission.html"
+                            style="color: #7c0a02;">Admission</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #7c0a02;">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Academic.html" style="color: #7c0a02;">Academics</a></li>
+                            <li><a class="dropdown-item" href="Earlyedu.html" style="color: #7c0a02;">Early Years</a>
+                            </li>
+                            <li><a class="dropdown-item" href="primaryedu.html" style="color: #7c0a02;">Primary</a></li>
+                            <li><a class="dropdown-item" href="secedu.html" style="color: #7c0a02;">Secondary</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html"
+                            style="color: #7c0a02;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="career.html"
+                            style="color: #7c0a02;">Career</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand"><img src="Assets/logo wothout bg.png" alt="logo"
+                        style="width: 120px; height: 90px; margin-right: 400px;" /></a>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                            src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                            width="24" /></a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Making banner -->
+    <div class="card">
+        <video autoplay muted loop>
+            <source src="Assets/secondary  video.mp4" type="video/mp4">
+    </div>
+
+    <!-- Making navigation -->
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" style="color:#7c0a02">Secondary Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#grade6-8" style="color:#7c0a02">Grade 6-8</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#o-level" style="color:#7c0a02">O Level</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#matric" style="color:#7c0a02">Matriculation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a-level" style="color:#7c0a02">A Levels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hssc" style="color:#7c0a02">HSSC</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">Secondary Education</h2>
+            <p class="card-text">The quality of secondary education is critical for a successful career.</p>
+            <p class="card-text">Secondary education expands and improves the students’ mental and physical faculties so
+                that they may play their role as useful citizens of Pakistan.</p>
+
+            <!-- Making grade 6-8 section -->
+            <h2 class="card-title" id="grade6-8">Grade 6-8</h2>
+            <p class="card-text">Our Years 6–8 schools are safe, supportive, and engaging learning environments. We
+                follow both UK and Pakistan curriculums to ensure academic excellence and holistic growth.</p>
+            <p class="card-text">Students may choose between the CAIE O-Level track (completed in Year 11) or the Matric
+                programme (completed in Year 10). We offer personalised academic support where needed.</p>
+            <p class="card-text">Beyond academics, we emphasize values, emotional well-being, and strong parent-teacher
+                partnerships. Sports and co-curricular activities are also encouraged to support well-rounded
+                development.</p>
+            <!-- Making O Levels -->
+            <h2 class="card-title" id="o-level">O Levels</h2>
+            <h4 class="card-title">Overview</h4>
+            <p class="card-text">We are confident that we can provide you with an environment that is conducive to
+                learning, designed to stimulate your curiosity and challenge your understanding as you embark on your
+                educational career.</p>
+            <p class="card-text">Our O Level programme offers a wide range of subjects through Cambridge Assessment
+                International Education (CAIE), EdTech driven learning tools, and global learning resources.</p>
+            <p class="card-text">Simultaneously, students are engaged in extensive co-curricular activities, youth
+                programmes and global interactions. Our dedicated team of highly qualified teachers and on-campus career
+                counsellors work in close collaboration with parents to provide a holistic learning experience for
+                students, enabling them to make better-informed career decisions that maximise individual capabilities
+                and workplace needs.</p>
+            <h5 class="card-title">O Level Results 2024</h5>
+            <p class="card-text">Cityzens raise the bar yet again.</p>
+            <img src="Assets/o level result 2024.PNG" class="img-fluid" alt="O-levelresult">
+            <h4 class="card-title">Counselling, Alumni & Placement Services (CAPS)</h4>
+            <p class="card-text">
+            <ul>
+                <li style="list-style-type: disc;">The CAPS team works for the holistic development of our students in
+                    Classes 8 to 11 by providing
+                    opportunities for self-development, for example, volunteer work, internships, participation in local
+                    and international competitions, and summer programmes.</li>
+                <li style="list-style-type: disc;">The Guidance Counsellor at school evaluates students’ abilities and
+                    interests through aptitude
+                    assessments, counselling sessions and individual education plans.</li>
+                <li style="list-style-type: disc;">The Guidance Counsellor works with the instructor, student and
+                    parents to choose the right subject
+                    combinations, thus ensuring the long-term career success of our TCS students.</li>
+            </ul>
+            </p>
+            <!-- Making Matriculation-->
+            <h2 class="card-title" id="matric">Matriculation</h2>
+            <h4 class="card-title">Overview</h4>
+
+            <p class="card-text"><span>Little Folks School</span> has a legacy of producing brilliant matriculation
+                results throughout
+                the country.</p>
+            <p class="card-text">Our dedicated faculty and holistic curriculum are the key to our success. We also
+                provide students with opportunities to thrive in their passions for sports, music, and drama. Our Alumni
+                include a long list of professional persons including doctors, engineers, lawyers, sportsmen,
+                architects, businessmen, and entrepreneurs.</p>
+            <p class="card-text">The curriculum usually includes a combination of eight courses, including electives
+                (such as Biology, Chemistry, Computing and Physics) as well as compulsory subjects (such as Mathematics,
+                English, Urdu, Islamic studies and Pakistan Studies).</p>
+            <hr>
+            <h4 class="card-title">Key features of our matriculation program.</h4>
+            <p class="card-text">
+            <ul>
+                <li style="list-style-type: disc;">Admissions to leading Engineering & Medical Universities</li>
+                <li style="list-style-type: disc;">High Achievers in Board Examinations</li>
+                <li style="list-style-type: disc;">Development of reading and writing skills</li>
+                <li style="list-style-type: disc;">Competitive sports activities throughout the year</li>
+                <li style="list-style-type: disc;">Role Play – Developing confidence and leadership qualities</li>
+                <li style="list-style-type: disc;">English language as a preferred medium of exchange</li>
+            </ul>
+            </p>
+
+            <!-- Making A Levels -->
+            <h2 class="card-title" id="a-Level">A Levels</h2>
+            <h4 class="card-title">Overview</h4>
+            <p class="card-text"><span>Little Folks School</span> is far from being a Shakespearean comedy though we
+                believe that
+                students should explore and reflect on their interests, find out who they are and who they can be.</p>
+            <p class="card-text">All will end well, due to the support given to students as they go through the highs
+                and lows of their studies, extra-curricular activities and university placement with our dedicated
+                college counsellors.</p>
+            <p class="card-text">We have currently the best A-Level results in the country, the year 2021 seeing a
+                record breaking 39 World Distinctions and Awards.</p>
+            <p class="card-text">We offer a variety of scholarships for talented students.</p>
+            <h5 class="card-title">CAIE Results</h5>
+            <p class="card-text">Folkians make headlines record breakers</p>
+
+            <img src="Assets/A levels result.PNG" class="img-fluid" alt="A-Level results">
+            <hr>
+            <h4 class="card-title">Where Champions Are Made</h4>
+            <p class="card-text">Every student at <span>Little Folks School</span> is unique in their abilities and
+                talents. Hence our
+                school facilities are tailored to meet the diverse requirements of our student body in terms of their
+                physical and emotional health.</p>
+            <!-- Making horizontal cards -->
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/science lab.PNG" class="img-fluid rounded-start" alt="Science Laboratories"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Science Laboratories</h5>
+                            <p class="card-text">
+                                Our Cambridge-standard labs are fully equipped and regularly updated to meet CAIE
+                                syllabus requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Making horizontal card 2 -->
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/computer lab.PNG" class="img-fluid rounded-start" alt="Computer Laboratories"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Computer Laboratories</h5>
+                            <p class="card-text">Our computer labs, equipped with modern technology and expert staff,
+                                meet Cambridge International standards with full networking and internet access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Making horizontal card 4 -->
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/library.PNG" class="img-fluid rounded-start" alt="Libraries"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Libraries</h5>
+                            <p class="card-text">Students enjoy a rich collection of classic and modern stories, picture
+                                books, rhymes, story sacks, and puppets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/Common room.PNG" class="img-fluid rounded-start" alt="Common Rooms​"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Common Rooms​</h5>
+                            <p class="card-text">Well-equipped common rooms offer A Level students a comfortable space
+                                with audio-visual, educational, and recreational facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/sports.PNG" class="img-fluid rounded-start" alt="Sports and Fitness"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports and Fitness</h5>
+                            <p class="card-text">Students develop their skills through indoor games and outdoor sports,
+                                guided by qualified national coaches and supported by well-equipped gyms and
+                                playgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="features-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="Assets/cafeteria.PNG" class="img-fluid rounded-start" alt="Cafeteria"
+                            style="height: 150px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafeteria</h5>
+                            <p class="card-text">Our A Level campus features air-conditioned, hygienic cafeterias
+                                offering a variety of affordable meals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+
+            <!-- Counselling, Alumni & Placement Services -->
+            <div class="Counselling,Alumni&PlacementServicesSection">
+                <div class="row">
+                    <!-- Text Section -->
+                    <div class="col-lg-7 mb-4">
+                        <h2 class="caps-heading">Counselling, Alumni & Placement Services</h2>
+                        <div class="caps-content">
+                            <p>Counselling, Alumni and Placement Services (CAPS) is a key part of our A Level programme.
+                                Experienced counsellors offer individual and group guidance on subject choices, college
+                                applications, and test preparation.</p>
+                            <p>Through the BridgeU platform, students access global career advice and expert insights.
+                                CAPS also supports skill-building through internships and volunteer work, helping
+                                students secure top local and international university placements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Section -->
+                    <div class="col-lg-5 video-wrapper">
+                        <video class="elementor-video"
+                            src="https://thecityschool.edu.pk/wp-content/uploads/A-Level-Program.mp4" controls=""
+                            preload="metadata" controlslist="nodownload"
+                            poster="https://thecityschool.edu.pk/wp-content/uploads/a-level-program-video-shot.jpg"></video>
+                    </div>
+                </div>
+
+                <h2 class="card-title">Fee Structure & Scholarships</h2>
+                <p class="card-text">
+                <ul>
+                    <li style="list-style-type: disc;">The A Level fee structure varies from campus to campus and is
+                        based on the elective subjects
+                        opted by the students.</li>
+                    <li style="list-style-type: disc;"><span>Little Folks School</span> offers merit, sports and
+                        co-curricular scholarships. These
+                        range from a 25% to
+                        100% waiver on the tuition fee.</li>
+                    <li style="list-style-type: disc;">Merit scholarships are based on a student’s O Level results or
+                        equivalent.</li>
+                    <li style="list-style-type: disc;"><span>Little Folks School</span> reserves the right to withdraw
+                        any schoae rules governing the
+                        scheme at any time
+                        at its sole discretion.</li>
+                </ul>
+                </p>
+                <p class="card-text">Please contact your nearest <span>Little Folks School</span> – A Level Campus for
+                    more details.</p>
+            </div>
+            <br>
+
+            <!-- Making HSSC section -->
+            <h2 class="card-title" id="hssc">HSSC</h2>
+            <h4 class="card-title">Overview</h4>
+
+            <p class="card-text">Being a leader in educational excellence, <span>Little Folks School</span> has
+                increased the number of campuses that offers the HSSC programme.</p>
+            <p class="card-text">Our counsellors will help students to make the right choice of pathway for their future
+                careers.</p>
+            <br>
+            <hr> <br>
+            <h4 class="card-title">Subject Offered</h4>
+            <p class="card-text">
+            <ul>
+                <li style="list-style-type: disc;">Chemistry</li>
+                <li style="list-style-type: disc;">English</li>
+                <li style="list-style-type: disc;">Urdu </li>
+                <li style="list-style-type: disc;">Pakistan Studies</li>
+                <li style="list-style-type: disc;">Islamiat</li>
+                <li style="list-style-type: disc;">Mathematics</li>
+                <li style="list-style-type: disc;">Biology</li>
+                <li style="list-style-type: disc;">Physics</li>
+                <li style="list-style-type: disc;">Conputer Science</li>
+            </ul>
+            </p>
+
+        </div>
+        <!-- Making footer -->
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 id="footer-heading">Contact Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2" id="footer-content">
+                            <a href="#contact-us" class="nav-link p-0" id="footer-links" style="color: white;">Help
+                                Center</a>
+                        </li>
+                        <li class="nav-item mb-2" id="footer-content">
+                            <a href="#about-us" class="nav-link p-0" id="footer-links" style="color: white;">Supprt</a>
+                        </li>
+                        <li class="nav-item mb-2" id="footer-content">
+                            <a href="Deliverypage.html" class="nav-link p-0" id="footer-links"
+                                style="color: white;">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 id="footer-heading">Join Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                            Sign Up
+                        </li>
+                        <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                            Log In
+                        </li>
+                        <li class="nav-item mb-2" id="footer-content" class="nav-link p-0">
+                            Affiliate
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 offset-md-1 mb-3" id="newsletter">
+                    <h5 id="footer-heading">Subscribe to our newsletter</h5>
+                    <p id="footer-content">
+                        Monthly digest of what's new and exciting from us.
+                    </p>
+                    <form>
+                        <div class="d-flex w-100 gap-2">
+                            <input type="email" class="form-control" placeholder="Email address" id="sub-email" />
+                            <button class="btn" type="submit" id="sub-button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p id="footer-content">
+                    &copy; 2025 <span style="color: white;">Little Folks School</span>, Inc. All rights reserved.
+                </p>
+                <ul class="list-unstyled d-flex me-5">
+                    <li class="ms-3">
+                        <a class="link-dark" href="https://www.instagram.com/laibasheikh8019?igsh=YW9jbTNqaHg3eGdz"><img
+                                src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" /></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="https://www.facebook.com/laiby.shykh?mibextid=ZbWKwL"><img
+                                src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" /></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                                width="24" /></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
